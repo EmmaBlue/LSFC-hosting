@@ -1,12 +1,44 @@
 <body>
   <div class="mainSect container-fluid">
     <div class="row" id="navRow">
-        <div class="col-lg-3 col-md-2 col-sm-6 col-xs-6" id="logoContain">
+        <!--<div class="col-lg-3 col-md-2 col-sm-6 col-xs-6" id="logoContain">
             <a href="page-home.php?link=1"><img src="wp-content/themes/lsfc_theme/images/lsfc-logo.svg" alt="London Squash and Fitness Club Logo"></a>
-        </div>
-        <div class="col-lg-9 col-md-10 col-sm-6 col-xs-6">
+        </div>-->
+        <nav id="nav-bootstrap" class="navbar navbar-default col-lg-12" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a id="logoContain" href="page-home.php?link=1"><img src="wp-content/themes/lsfc_theme/images/lsfc-logo.svg" alt="London Squash and Fitness Club Logo"></a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                  <li ><a href="page-home.php?link=1" name="link2" title="Home">Home</a></li>
+                  <li class="#"><a href="page-about.php?link=2" name="link2" title="About">About</a> </li>
+                  <li class="#"><a href="page-programs.php?link=3" name="link3" title="Our Programs">Our Programs</a></li>
+                  <li class="#"><a href="page-book-visit.php?link=4" name="link4" title="Book a Visit">Book a Visit</a></li>
+                  <li class="#"><a href="https://lsfc.gametime.net/auth" title="Book a Court">Book a Court</a></li>
+                  <li><a href="page-contact.php?link=5" name="link5" title="Contact Us">Contact</a> </li>
+
+                    <li> <a class="socNav" href="https://www.facebook.com/groups/LondonSFC/about/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="socNav" href="https://www.instagram.com/londonsquash/"><i class="fa fa-instagram"></i></a></li>
+                    <li>  <a class="socNav" href="https://twitter.com/londonsquash"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="socNav" href="https://www.linkedin.com/company/london-squash-&-fitness-club/"><i class="fa fa-linkedin"></i></a></li>
+
+
+                  <li class="membersOnly"><a href="page-members.php?link=6" name="link6" title="For Members">For Members</a></li>
+                </ul>
+              </div>
+            </nav>
+      <!--  <div class="col-lg-9 col-md-10 col-sm-6 col-xs-6">
             <div class="navigation" id="navContain">
-                <div id="navigation">
+
+                -div id="navigation">
 
                     <ul>
                         <li ><a href="page-home.php?link=1" name="link2" title="Home">Home</a></li>
@@ -25,12 +57,12 @@
                         <li class="membersOnly"><a href="page-members.php?link=6" name="link6" title="For Members">For Members</a></li>
                     </ul>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
   </div>
   <?php
-          $link=$_GET['link'];
+         $link=$_GET['link'];
           if ($link == '1'){
               require 'page-home.php';
           }

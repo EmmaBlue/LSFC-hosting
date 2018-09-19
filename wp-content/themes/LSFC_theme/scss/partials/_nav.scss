@@ -1,10 +1,33 @@
 // Index Nav Styles
+.navbar  {
 
-
-#navContain {
-
-  display: relative;
+  background-color: $secondary;
 }
+
+#nav-bootstrap {
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0px;
+  border-color: transparent;
+
+}
+
+.navbar-default .navbar-collapse {
+
+  border-color: transparent;
+}
+
+
+@media screen and (min-width:1016px) {
+
+  .navbar-collapse.collapse {
+
+      margin-top: 12px;
+  }
+}
+
+
 
 #mobileNavContain {
 
@@ -12,17 +35,50 @@
   display: inline-block;
 }
 
+.navbar-default .navbar-toggle {
+
+  border: 0px;
+  padding: 0px 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+
+  background-color: $primary;
+}
+
+.navbar-default .navbar-toggle:hover {
+
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+
+  background-color: transparent;
+}
+
 #logoContain {
 
-  margin-top:-10px;
 
   img {
 
-    height: 3em;
-    margin-top: 15px;
+    height: 4em;
+    margin: 0 auto;
+    width: 100%;
     margin-bottom: 5px;
-    padding-left: 90%;
+    text-align: center;
   }
+}
+
+.nav > li {
+
+  text-align: center;
+}
+
+.navbar-default .navbar-nav > li > a {
+
+  color: white;
 }
 
 
@@ -59,6 +115,7 @@
 #navRow {
 
   background-color: $secondary;
+
 }
 
 

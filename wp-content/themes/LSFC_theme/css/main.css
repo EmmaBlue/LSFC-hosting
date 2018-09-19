@@ -28,20 +28,52 @@
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-#navContain {
-  display: relative; }
+.navbar {
+  background-color: #d5a00e; }
 
+#nav-bootstrap {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0px;
+  border-color: transparent; }
+
+.navbar-default .navbar-collapse {
+  border-color: transparent; }
+
+@media screen and (min-width: 1016px) {
+  .navbar-collapse.collapse {
+    margin-top: 12px; } }
 #mobileNavContain {
   background-color: #d5a00e;
   display: inline-block; }
 
-#logoContain {
-  margin-top: -10px; }
-  #logoContain img {
-    height: 3em;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    padding-left: 90%; }
+.navbar-default .navbar-toggle {
+  border: 0px;
+  padding: 0px 0px;
+  margin-bottom: 0px;
+  margin-top: 0px; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #00703c; }
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent; }
+
+.navbar-default .navbar-toggle {
+  background-color: transparent; }
+
+#logoContain img {
+  height: 4em;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: center; }
+
+.nav > li {
+  text-align: center; }
+
+.navbar-default .navbar-nav > li > a {
+  color: white; }
 
 #navigation {
   z-index: 2;
